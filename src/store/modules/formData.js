@@ -18,6 +18,8 @@ const mutations = {
     let valStr = payload.val
     let key = pathArr[pathArr.length - 1].toString()
     eval(`${formData} = { ...${formData}, ${key}: valStr }`)
+    console.log('-----store-----')
+    console.log(state.formData.form1.name)
   }
 }
 
